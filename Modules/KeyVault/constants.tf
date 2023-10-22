@@ -1,3 +1,3 @@
 module "constants" {
-  source = "../../TerraformModules/Constants"
+  source = "../Constants"
 }
