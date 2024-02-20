@@ -27,7 +27,7 @@ variable "resource_environment" {
   }
 }
 
-# variable "secret_user_principal_id" {
-#   default     = ""
-#   description = "Principal id to give secret user permissions to."
-# }
+variable "key_vault_suffix" {
+  default     = ""
+  description = "Optional suffix for global uniqueness."
+}
