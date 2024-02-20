@@ -30,11 +30,11 @@ variable "storage_account_numerical_suffix" {
 }
 
 variable "resource_environment" {
-  default     = "prod"
+  default     = "dev"
   description = "Environment of the resource."
   validation {
-    condition     = contains(["prod", "stg", "dev"], var.resource_environment)
-    error_message = "The environment must be either 'prod', 'stg' or 'dev'."
+    condition     = contains(["dev", "stg", "prd"], var.resource_environment)
+    error_message = "The environment must be either 'dev', 'stg' or 'prd'."
   }
 }
 
